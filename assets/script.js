@@ -1,4 +1,5 @@
 const DEFAULT_COLOR = "#000000";
+const DEFAULT_MODE = "colorPicker";
 const DEFAULT_SIZE = 50;
 
 const buttons = document.getElementById("buttons");
@@ -10,9 +11,9 @@ const sizeSldrLabel = document.getElementById("sizeSldrLabel");
 const eraserBtn = document.getElementById("eraserBtn");
 const clearBtn = document.getElementById("clearBtn");
 
-let currentSize = DEFAULT_SIZE;
 let currentColor = DEFAULT_COLOR;
-let currentMode = "colorPicker";
+let currentMode = DEFAULT_MODE;
+let currentSize = DEFAULT_SIZE;
 
 let mouseDown = false;
 window.onmousedown = () => (mouseDown = true);
