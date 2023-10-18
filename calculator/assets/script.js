@@ -1,6 +1,6 @@
 const DEFAULT_VALUE = 0;
 
-const historyScreen = document.getElementById("historyScreen");
+const totalScreen = document.getElementById("totalScreen");
 const inputScreen = document.getElementById("inputScreen");
 const clearBtn = document.getElementById("clearBtn");
 const deleteBtn = document.getElementById("deleteBtn");
