@@ -35,11 +35,17 @@ header {
   height: 30%;
 }
 
-#screenContainer > * {
+#screenContainer > div {
   background-color: #ffffff;
-  direction: rtl;
   height: 50%;
   overflow-x: scroll;
+  transform: rotateY(180deg);
+}
+
+#screenContainer > div > div {
+  text-align: end;
+  transform: rotateY(180deg);
+  width: max-content;
 }
 
 ::-webkit-scrollbar {
