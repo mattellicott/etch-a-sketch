@@ -1,0 +1,138 @@
+:root {
+  background-color: #000000;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body,
+#leftContainer,
+#rightContainer {
+  min-height: 100vh;
+}
+
+#leftContainer {
+  width: 40%;
+  position: fixed;
+  left: 0;
+  background-image: url("image.jpg");
+  background-size: 100% 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#logoContainer {
+  color: #f8f8ff;
+  height: 100px;
+  gap: 20px;
+  font-size: 2rem;
+  opacity: 0;
+  flex: 1;
+  display: flex;
+  flex-wrap: wrap;
+  place-content: center;
+  align-items: center;
+}
+
+#logoIMG {
+  height: 100px;
+  width: 100px;
+  background-image: url("odin-logo.png");
+  background-position: center;
+  background-size: 100% 100%;
+}
+
+#footerCredit,
+#footerCredit > a:link {
+  color: #f8f8ff;
+}
+
+#rightContainer {
+  color: #ffffff;
+  width: 60%;
+  position: absolute;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+#rightContainer > * {
+  flex-basis: calc(100vh / 3);
+}
+
+#rightTopContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#rightMidContainer {
+  background-color: #f8f8ff;
+  color: #000000;
+  border-radius: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#rightMidContainer form {
+  width: 50vw;
+  margin: 40px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 50%));
+  grid-template-rows: repeat(auto-fit, 1fr);
+  row-gap: 20px;
+}
+
+#rightMidContainer label {
+  display: block;
+  font-size: 0.75rem;
+  font-weight: bold;
+}
+
+#rightMidContainer input {
+  background-color: #f8f8ff;
+  color: #000000;
+  height: 30px;
+  width: 200px;
+  border: 3px solid #d3d3d3;
+}
+
+#rightMidContainer input:focus {
+  border-color: #0000ff;
+  box-shadow: 3px 3px 5px #b2b2b2;
+}
+
+#rightBottomContainer > div {
+  margin: 40px;
+}
+
+#rightBottomContainer button {
+  background-color: #f8f8ff;
+  color: #000000;
+  padding: 15px 40px;
+  font: bold 1rem Arial;
+  border: 1px solid #000000;
+  border-radius: 6px;
+}
+
+#rightBottomContainer button:hover {
+  background-color: #000000;
+  color: #f8f8ff;
+  border-color: #f8f8ff;
+}
+
+#rightBottomContainer p {
+  margin-top: 40px;
+  font-size: 16px;
+}
+
+a:link,
+a:visited {
+  color: #f8f8ff;
+}

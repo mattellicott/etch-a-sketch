@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign-up Form</title>
+    <link href="./assets/style.css" rel="stylesheet" type="text/css" />
+    <script src="./assets/script.js" defer></script>
+  </head>
+  <body>
+    <main>
+      <section id="leftContainer">
+        <div id="logoContainer">
+          <div id="logoIMG"></div>
+          <h1>ODIN</h1>
+        </div>
+        <footer id="footerCredit">
+          Photo by
+          <a
+            href="https://unsplash.com/@visaxslr?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
+            >Visax</a
+          >
+          on
+          <a
+            href="https://unsplash.com/photos/CwQECl2HaF4?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
+            >Unsplash</a
+          >
+        </footer>
+      </section>
+
+      <section id="rightContainer">
+        <div id="rightTopContainer">
+          <h2>
+            This is not a real online service! You know you need something like
+            this in your life to help you realize your deepest dreams.<br />Sign
+            up <i>now</i> to get started.
+          </h2>
+          <br />
+          <h2>You <i>know</i> you want to.</h2>
+        </div>
+
+        <section id="rightMidContainer">
+          <form id="form" method="post">
+            <h2>Let's do this!</h2>
+            <br />
+            <div>
+              <label for="firstName">FIRST NAME</label>
+              <input id="firstName" type="text" required />
+            </div>
+            <div>
+              <label for="lastName">LAST NAME</label>
+              <input id="lastName" type="text" required />
+            </div>
+            <div>
+              <label for="email">EMAIL</label>
+              <input id="email" type="email" required />
+            </div>
+            <div>
+              <label for="phoneNumber">PHONE NUMBER</label>
+              <input id="phoneNumber" type="tel" required />
+            </div>
+            <div>
+              <label for="password">PASSWORD</label>
+              <input id="password" type="password" required />
+            </div>
+            <div>
+              <label for="passwordConfirm">CONFIRM PASSWORD</label>
+              <input id="passwordConfirm" type="password" required />
+            </div>
+          </form>
+        </section>
+
+        <section id="rightBottomContainer">
+          <div>
+            <button id="submitBtn" form="form">Create Account</button>
+            <p>Already have an account? <a href="#">Log in</a></p>
+          </div>
+        </section>
+      </section>
+    </main>
+  </body>
+</html>
