@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Mohave"
+    />
+    <link href="./assets/style.css" rel="stylesheet" />
+    <script src="./assets/script.js" defer></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <h1>myLibrary</h1>
+      <div id="headerButtons">
+        <button id="addBookBtn">Add Book</button>
+        <button>Log in</button>
+      </div>
+    </header>
+    <dialog id="bookDialog">
+      <form id="bookForm">
+        <h1>Enter Book Info</h1>
+        <input id="titleInput" type="text" placeholder="Title" required />
+        <input id="authorInput" type="text" placeholder="Author" required />
+        <input
+          id="pagesInput"
+          type="number"
+          placeholder="# of Pages"
+          min="0"
+          max="10000"
+          required
+        />
+        <div>
+          <label for="hasReadInput">Have you read it?</label>
+          <input id="hasReadInput" type="checkbox" />
+        </div>
+        <button type="submit">Submit</button>
+      </form>
+    </dialog>
+    <div id="bookGrid"></div>
+    <footer>
+      Copyright ©
+      <script>
+        document.write(new Date().getFullYear());
+      </script>
+      mattellicott
+    </footer>
+  </body>
+</html>
