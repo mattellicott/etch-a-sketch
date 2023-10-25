@@ -91,7 +91,3 @@ button:hover {
   grid-template: repeat(4, 1fr) / repeat(4, 1fr);
   gap: 10px;
 }
-
-footer {
-  font-size: 2vh;
-}
